@@ -1,0 +1,158 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta lang="pt-br">
+            <meta charset="UTF-8">
+            <title>Teste Tabelas</title>
+            <link rel='stylesheet' href='style-tabelas.css'>
+        </head>
+        <body>
+            <script src='scripts-tabelas.js'></script>
+            <div class="container"><!--preparação do ambiente-->
+                
+                <button class='add-botao' onclick="back()">volta</button> 
+                <!-- ao clicar nesse botao voltamos pra tabela principal-->
+                
+                <table id="principal">
+                    <thead>
+                    <th>Mês</th>
+                    <th>Status</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td onclick="changeCell()">jan</td>
+                        <td onmouseover="changeValores(this, 1)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">fev</td>
+                        <td onmouseover="changeValores(this, 2)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">mar</td>
+                        <td onmouseover="changeValores(this, 3)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">abr</td>
+                        <td onmouseover="changeValores(this, 4)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">mai</td>
+                        <td onmouseover="changeValores(this, 5)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">jun</td>
+                        <td onmouseover="changeValores(this, 6)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">jul</td>
+                        <td onmouseover="changeValores(this, 7)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">ago</td>
+                        <td onmouseover="changeValores(this, 8)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">set</td>
+                        <td onmouseover="changeValores(this, 9)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">out</td>
+                        <td onmouseover="changeValores(this, 10)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">nov</td>
+                        <td onmouseover="changeValores(this, 11)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">dez</td>
+                        <td onmouseover="changeValores(this, 12)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div> 
+        </body>
+    </html>
+</DOCTYPE>
+
+
+<!-- minha cola! -->
+
+<!-- <table id='secundaria'> 
+    <thead>
+        <th>GASTOS</th>
+        <th>GANHOS</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+    <caption>Criado por Diogo</caption>
+    </table> 
+-->
+
+<!--                <table id="principal">
+                    <thead>
+                    <th>Mês</th>
+                    <th>Status</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td onclick="changeCell()">jan</td>
+                        <td onmouseover="changeValores(this, 1)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">fev</td>
+                        <td onmouseover="changeValores(this, 2)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">mar</td>
+                        <td onmouseover="changeValores(this, 3)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">abr</td>
+                        <td onmouseover="changeValores(this, 4)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">mai</td>
+                        <td onmouseover="changeValores(this, 5)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">jun</td>
+                        <td onmouseover="changeValores(this, 6)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">jul</td>
+                        <td onmouseover="changeValores(this, 7)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">ago</td>
+                        <td onmouseover="changeValores(this, 8)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">set</td>
+                        <td onmouseover="changeValores(this, 9)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>POSITIVO
+                    <tr>
+                        <td onclick="changeCell()">out</td>
+                        <td onmouseover="changeValores(this, 10)" onmouseout="changeStatus(this, 0)">POSITIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">nov</td>
+                        <td onmouseover="changeValores(this, 11)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    <tr>
+                        <td onclick="changeCell()">dez</td>
+                        <td onmouseover="changeValores(this, 12)" onmouseout="changeStatus(this, 1)">NEGATIVO</td>
+                    </tr>
+                    </tbody>
+                </table>  -->

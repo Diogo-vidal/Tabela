@@ -1,0 +1,52 @@
+/**resetando o canvas**/
+html, body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/**preparando o ambiente**/
+.container{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+/**configuração geral da planilha**/
+#principal{
+    border: 1px solid black;
+    border-collapse: separate;
+    width: 700px;
+    height: 500px;
+
+}
+#principal th{
+    border-bottom: 1px solid black;
+    font-size: larger;
+}
+#principal td{
+    text-align: center;
+    font-size: larger;
+}
+
+/**configuraçao dos estilos da planilha**/
+#principal thead{
+    background-color: rgb(177, 219, 103);
+}
+#principal tbody{
+    background-color: rgb(68, 158, 158);
+}
+
+
+
+/* configuraçao do botao add */
+.add-botao{
+    width: 150;
+    height: 50;
+    
+}
